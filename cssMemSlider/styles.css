@@ -16,5 +16,97 @@
 
 body {
   font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
+  font-size: 10px;
   background: #F7EDE2;
+  color: #84A59D;
+}
+
+.slider {
+  width: 90%;
+  margin:  auto;
+  height: 90vh;
+  margin-top: 1vh;
+  border: 0.5vh solid #84A59D;
+
+}
+
+.slider__wrapper {
+
+}
+
+.title {
+
+}
+
+.subtitle{
+
+}
+
+.slider input[name="switch"] {
+  visibility: hidden;
+}
+
+
+.btn-1 {
+}
+.btn-2 {
+}
+.btn-3 {
+}
+.btn-4 {
+}
+.btn-5 {
+}
+.switch {
+}
+.switch__inner {
+}
+.slider__inner {
+  border: 0.5vh solid #84A59D;
+}
+
+.slider__panel{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slides {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 500%;
+  transition: all 0.5s;
+
+}
+.slide {
+}
+.slider__descr {
+
+}
+.slider__text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.slider__title {
+  font-size: 1.5em;
+}
+
+.btn1:checked~slider-inner slides {
+  transform: translate(0);
+}
+
+.btn2:checked~.slider-inner .slides {
+  transform: translate(-20%);
+}
+
+.btn3:checked~.slider-inner .slides {
+  transform: translate(-40%);
+}
+.btn4:checked~.slider-inner .slides {
+  transform: translate(-60%);
+}
+
+.btn5:checked~.slider-inner .slides {
+  transform: translate(-80%);
 }
