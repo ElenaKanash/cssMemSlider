@@ -16,53 +16,56 @@
 
 body {
   font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
-  font-size: 10px;
   background: #F7EDE2;
-  color: #84A59D;
 }
 
 .slider {
-  width: 90%;
+  width: 41rem;
   margin:  auto;
   height: 90vh;
   margin-top: 1vh;
-  border: 0.5vh solid #84A59D;
-
-}
-
-.slider__wrapper {
-
 }
 
 .title {
-
+  font-size: 2rem;
+  color:#84A59D;
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
-.subtitle{
+.subtitle, .title__descr {
+  color: #5c746f;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  width: 100%
+}
 
+.title__descr {
+  text-align: center;
 }
 
 .slider input[name="switch"] {
   visibility: hidden;
 }
 
-
-.btn-1 {
-}
-.btn-2 {
-}
-.btn-3 {
-}
-.btn-4 {
-}
-.btn-5 {
-}
-.switch {
-}
-.switch__inner {
-}
 .slider__inner {
-  border: 0.5vh solid #84A59D;
+  width: 41rem;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  border: 0.5rem solid #84A59D;
+  border-radius: 0.8rem;
+}
+
+.slides {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 500%;
+  height: 25rem;
+  transition: all 0.5s;
+}
+
+.slide {
+  object-fit: cover;
 }
 
 .slider__panel{
@@ -71,25 +74,19 @@ body {
   justify-content: space-between;
 }
 
-.slides {
-  display: flex;
-  flex-wrap: nowrap;
+.slider__descr {
   width: 500%;
   transition: all 0.5s;
-
-}
-.slide {
-}
-.slider__descr {
+  overflow: hidden;
+  width: 25rem;
 
 }
 .slider__text {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  width: 500%;
 }
 .slider__title {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 .btn1:checked~slider-inner slides {
@@ -109,4 +106,21 @@ body {
 
 .btn5:checked~.slider-inner .slides {
   transform: translate(-80%);
+}
+
+
+.btn-1 {
+}
+.btn-2 {
+}
+.btn-3 {
+}
+.btn-4 {
+}
+.btn-5 {
+}
+.switch {
+}
+.switch__inner {
+
 }
