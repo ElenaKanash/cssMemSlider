@@ -67,8 +67,8 @@ body {
 .slides {
  /*  display: flex; */
   flex-wrap: nowrap;
-   height:  25.9rem;
-   transition: all 0.2s linear;
+  height:  25.9rem;
+  transition: all 0.2s linear;
 
 }
 
@@ -227,11 +227,12 @@ body {
 
 @media screen and (max-width: 767px){
   .slider{
-    width: 20rem;
+    max-width: 20rem;
     padding: 2rem 0.2rem;
   }
 
   .slider__descr{
+    order:2;
     width: 100%;
   }
 
